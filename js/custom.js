@@ -1,5 +1,19 @@
+
+  $(function(){
+    //$(".chevron-down").
+    $("div[data-toggle=collapse]").click(function(){
+        $(this).children('span').toggleClass("fa-chevron-down fa-chevron-up");
+    });
+})
+
+
+
 (function ($) {
   "use strict";
+
+
+
+
 
   var review = $('.player_info_item');
   if (review.length) {
