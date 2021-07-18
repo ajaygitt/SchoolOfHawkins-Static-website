@@ -18,6 +18,16 @@ for education and its our vision & Motto">
 
   <meta name="keywords" content="schoolofhawking sh schoolofhawkin schoolofhawkings">
 
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script> -->
+
+
 
 
 
@@ -401,7 +411,7 @@ for education and its our vision & Motto">
                     <!-- Questiion Five -->
                     <li>
                         <div class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                         <h4> How can i enroll for the Web Development ?</h4>
+                         <h4> How can I enroll for the Web Development ?</h4>
                             <span class="fa fa-chevron-down fa-1x text-info pull-right"></span>
                         </div>
                           <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
@@ -415,7 +425,7 @@ for education and its our vision & Motto">
                     <!-- Question Six-->
                     <li>
                         <div class="collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        <h4>When i can enroll for the other couses
+                        <h4>When I can enroll for the other couses
                           mentioned ?</h4>  
                             <span class="fa fa-chevron-down fa-1x text-info pull-right"></span>
                         </div>
@@ -492,8 +502,8 @@ for education and its our vision & Motto">
             </div>
             <div class="col-lg-8">
               <form class="form-contact contact_form"
-                action="" method="post" id="contactForm"
-                novalidate="novalidate">
+                onsubmit="formSubmit(e)"
+                >
                 <div class="row">
                   <div class="col-12">
                     <div class="form-group">
@@ -589,18 +599,7 @@ for education and its our vision & Motto">
             <p>© 2021 <br> Site Developed & maintained by:<a href=""> Infinity- DEV
                   </a> </p>
 
-                  
-                <!-- <form action="#">
-                  <div class="form-group">
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder='Enter email address'
-                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
-                      <div class="input-group-append">
-                        <button class="btn btn_1" type="button"><i class="ti-angle-right"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </form> -->
+            
                 <div class="social_icon">
                   <a href="#"> <i class="ti-facebook"></i> </a>
                   <a href="#"> <i class="ti-twitter-alt"></i> </a>
@@ -613,19 +612,41 @@ for education and its our vision & Motto">
               <div class="single-footer-widget footer_2">
                 <h4></h4>
                 <div class="contact_info">
-                  <!-- <p><span> Address :</span> Hath of it fly signs bear be one blessed after </p>
-                  <p><span> Phone :</span> +2 36 265 (8060)</p>
-                  <p><span> Email : </span><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection"
-                      class="__cf_email__"
-                      data-cfemail="026b6c646d42616d6e6d706e6b602c616d6f">[email&#160;protected]</a>
-                  </p> -->
+                 
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+     
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <script>
+function formSubmit(e){
 
+               e.preventDefault()
+
+              
+
+
+
+}
+// console.log($("#contactForm").serialize());
+              //  $.ajax({
+              //      url:"https://script.google.com/macros/s/AKfycby23Xbo10KsqpiCtjF0nKID0QMl2xKAlDE24MCSo3yysCm4BZjmg5tJhV-m1dbCTm0o/exec",
+              //      data:$("#contactForm").serialize(),
+              //      method:"post",
+              //      success:function (response){
+              //          alert("Form submitted successfully")
+              //          window.location.reload()
+                      
+              //      },
+              //     error:function (err){
+              //         alert("Something Error")
+      
+              //      }
+              //  })
+      </script>
 
 
 
@@ -651,14 +672,7 @@ for education and its our vision & Motto">
 
         <script src="js/custom.js"></script>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
-          gtag('js', new Date());
-
-          gtag('config', 'UA-23581568-13');
-        </script>
+       
 
 
 
