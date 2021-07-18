@@ -623,18 +623,21 @@ for education and its our vision & Motto">
               <script>
 function formSubmit(){
 
-              
-               alert("jai")
+          
 let email=document.getElementById('email').value
 let message=document.getElementById('message').value
 let name=document.getElementById('name').value
 let phno=document.getElementById('phno').value
 
-console.log(email);
-alert(""+email+message+phno+name)
 
+if(!email&&!message&&!name&&!phno)
+{
 
-$.ajax({
+  alert('please fill all the fields')
+}
+else
+{
+  $.ajax({
  url:"https://script.google.com/macros/s/AKfycby_OpYuWts1cd8MirnThFcjkKeg68VM1mqk4cUdhpn-t_b4B0gW1qRF0s0OjTOP0haC/exec",
                    data:{
                      email,
@@ -653,7 +656,8 @@ $.ajax({
       
                    }
                })
-              
+}
+       
 
 
 
