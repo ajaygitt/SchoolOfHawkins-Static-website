@@ -181,13 +181,13 @@ h2 {
   list-style:one;
 } */
 div[data-toggle="collapse"]{
- border-bottom:1px solid #BBDEFB;
+ border-bottom:1px solid #ffffff;
  width:100%;
  cursor:pointer;
  padding:1%;
 }
 .collapse{
-  background:#F5F5F5;
+  background:#ffffff;
 }
 
 .pd-2{

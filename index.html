@@ -501,9 +501,7 @@ for education and its our vision & Motto">
 
             </div>
             <div class="col-lg-8">
-              <form class="form-contact contact_form"
-                onsubmit="formSubmit(e)"
-                >
+              <form class="form-contact">
                 <div class="row">
                   <div class="col-12">
                     <div class="form-group">
@@ -526,14 +524,15 @@ for education and its our vision & Motto">
                   </div>
                   <div class="col-12">
                     <div class="form-group">
-                      <input class="form-control" name="subject" id="subject" type="text"
+                      <!-- <label for="form">enter phone number</label> -->
+                      <input class="form-control" name="phno" id="phno" type="text"
                         onfocus="this.placeholder = ''" onblur="this.placeholder = ' Enter Subject'"
-                        placeholder="Enter Subject" required>
+                        placeholder="Enter Phone Number" required>
                     </div>
                   </div>
                 </div>
                 <div class="form-group mt-3">
-                  <button type="submit" class="button button-contactForm btn_1"> Send Message</button>
+                  <button type="button" onclick="formSubmit()" class="button button-contactForm btn_1"> Send Message</button>
                 </div>
               </form>
             </div>
@@ -566,8 +565,8 @@ for education and its our vision & Motto">
               <div class="media contact-info">
                 <span class="contact-info__icon"><i class="ti-email"></i></span>
                 <div class="media-body">
-                  <h3><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__"
-                      data-cfemail="82f1f7f2f2edf0f6c2e1edeeedf0eeebe0ace1edef">[email&#160;protected]</a></h3>
+                  <h3><a href="mailto:contact@schoolofhawking.com" class="__cf_email__"
+                      data-cfemail="82f1f7f2f2edf0f6c2e1edeeedf0eeebe0ace1edef">contact@schoolofhawking.com</a></h3>
                   <p>Send us your query anytime!</p>
                 </div>
               </div>
@@ -620,32 +619,47 @@ for education and its our vision & Motto">
         </div>
 
      
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
               <script>
-function formSubmit(e){
+function formSubmit(){
 
-               e.preventDefault()
+              
+               alert("jai")
+let email=document.getElementById('email').value
+let message=document.getElementById('message').value
+let name=document.getElementById('name').value
+let phno=document.getElementById('phno').value
 
+console.log(email);
+alert(""+email+message+phno+name)
+
+
+$.ajax({
+ url:"https://script.google.com/macros/s/AKfycby_OpYuWts1cd8MirnThFcjkKeg68VM1mqk4cUdhpn-t_b4B0gW1qRF0s0OjTOP0haC/exec",
+                   data:{
+                     email,
+                     message,
+                     phno,
+                     name
+                   },
+                   method:"post",
+                   success:function (response){
+                       alert("Form submitted successfully")
+                       window.location.reload()
+                      
+                   },
+                  error:function (err){
+                      alert("Something Error")
+      
+                   }
+               })
               
 
 
 
 }
 // console.log($("#contactForm").serialize());
-              //  $.ajax({
-              //      url:"https://script.google.com/macros/s/AKfycby23Xbo10KsqpiCtjF0nKID0QMl2xKAlDE24MCSo3yysCm4BZjmg5tJhV-m1dbCTm0o/exec",
-              //      data:$("#contactForm").serialize(),
-              //      method:"post",
-              //      success:function (response){
-              //          alert("Form submitted successfully")
-              //          window.location.reload()
-                      
-              //      },
-              //     error:function (err){
-              //         alert("Something Error")
-      
-              //      }
-              //  })
+            
       </script>
 
 
