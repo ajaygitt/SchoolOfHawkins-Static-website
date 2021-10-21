@@ -1,7 +1,26 @@
+
+.banner_part_robotics{
+  height: 880px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/Robotics-cuate.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 68%;
+  background-position: top right;
+
+}
+
+
+
+
+
+
+
+
 /**************** extend css start ****************/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:300,400,500,600,700,800|Roboto:300,400,500");
 /* line 2, E:/172 Etrain Education/172_Etrain_Education_html/sass/_extends.scss */
-.btn_1, .btn_2:hover, .main_menu .navbar-toggler:after, .banner_part .banner_text .btn_1, .feature_part .single_feature:hover span {
+.btn_1, .btn_2:hover, .main_menu .navbar-toggler:after,.banner_part_robotics, .banner_part .banner_text .btn_1, .feature_part .single_feature:hover span {
   background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
 }
 
@@ -43,6 +62,11 @@ input:hover, input:focus {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  
+  .roboticspart{
+
+    margin-top: 350px !important;
+  }
   /* line 18, E:/172 Etrain Education/172_Etrain_Education_html/sass/_common.scss */
   .section_padding {
     padding: 80px 0px;
@@ -50,13 +74,19 @@ input:hover, input:focus {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  
+  .roboticspart{
+
+    margin-top: 350px !important;
+  }
   /* line 18, E:/172 Etrain Education/172_Etrain_Education_html/sass/_common.scss */
   .section_padding {
     padding: 70px 0px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) {      /* mobile devidc*/
+  
   /* line 18, E:/172 Etrain Education/172_Etrain_Education_html/sass/_common.scss */
   .section_padding {
     padding: 70px 0px;
@@ -2509,6 +2539,12 @@ ul {
     background-image: none;
     background-color: #f7f7f7;
   }
+  .banner_part_robotics{
+
+    height: 700px;
+    background-image: none;
+    background-color: #f7f7f7;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -2518,6 +2554,7 @@ ul {
     background-image: none;
     background-color: #f7f7f7;
   }
+  .banner_part_robotics
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2527,6 +2564,7 @@ ul {
     background-image: none;
     background-color: #f7f7f7;
   }
+  .banner_part_robotics
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2534,6 +2572,7 @@ ul {
   .banner_part {
     height: 650px;
   }
+  .banner_part_robotics
 }
 
 /* line 30, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
