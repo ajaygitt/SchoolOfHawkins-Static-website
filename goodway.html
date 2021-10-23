@@ -145,39 +145,16 @@ for education and its our vision & Motto">
                         onblur="this.placeholder = ' Enter your Age'" placeholder="Enter your age" required>
                     </div>
                   </div>
-
-
-                   <div class="col-sm-6">
+                  <div class="col-sm-6">
                     <div class="form-group">
                      <input style="border:2px solid " class="form-control" name="name" id="class" type="text" onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Standard of studying'" placeholder="Standard of studying" required>
+                        onblur="this.placeholder = ' Enter your standard (or) course currently learning'" placeholder="Enter your standard / course currently learning" required>
                     </div>
                   </div>
-                   <div class="col-sm-6">
-                    <div class="form-group">
-                   <textarea rows="4" cols="50"style="border:2px solid" placeholder="- Enter Your Address" id="address"></textarea>
-
-
-                    </div>
-                  </div>
-                  
                   <div class="col-sm-6">
 
                     <div class="form-group">
-                    <!--<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-  I have a Laptop
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-  <label class="form-check-label" for="flexRadioDefault2">
-   I dont have a Laptop
-  </label>
-</div>-->
-
-
+      <textarea rows="4" cols="50"style="border:2px solid" placeholder="- Enter Your Address" id="address"></textarea>
                     </div>
                   </div>
 <div class="col-sm-6">
@@ -199,7 +176,7 @@ for education and its our vision & Motto">
 
             <div class="col-lg-4">
                
-            <img src="img/Course app-pana.svg" alt="">
+            <img src="img/Courseapp-pana.svg" alt="">
 
               </div>
           
@@ -320,8 +297,8 @@ for education and its our vision & Motto">
             let parentname = document.getElementById('parentname').value
             let phone = document.getElementById('phone').value
   let age = document.getElementById('age').value
-  let class=document.getElementById('class').value
-let address=document.getElementById('address').value
+    let address = document.getElementById('address').value
+let programApplied="SKILLMAKER_ROBOTICS"
             if (!email && !name && !parentname && !phone) {
 
               alert('please fill all the fields')
@@ -331,7 +308,6 @@ let address=document.getElementById('address').value
 
 
             else {
-                let programApplied='GOODWAY'
               $.ajax({
                 url: "https://formsubmit.co/ajax/schoolofhawking@gmail.com",
                 data: {
@@ -340,7 +316,6 @@ let address=document.getElementById('address').value
                   parentname,
                   phone,
                   age,
-                  class,
                   address,
                   programApplied
                 },
@@ -348,7 +323,7 @@ let address=document.getElementById('address').value
                 method: "post",
                 success: function (response) {
                   alert("Form submitted successfully")
-                  window.location.replace('www.schoolofhawking.com')
+                  window.location.replace('/')
 
                 },
                 error: function (err) {
