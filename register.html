@@ -29,14 +29,7 @@ for education and its our vision & Motto">
 
 
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-
-<!-- (Optional) Latest compiled and minified JavaScript translation files -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
 
   <link rel="icon" href="img/favicon.png">
 
@@ -101,42 +94,8 @@ for education and its our vision & Motto">
 
 
 
-  <section class="learning_part" id="aim" style="margin-t">
-    <div class="container">
-      <div class="row align-items-sm-center align-items-lg-stretch">
-        <div class="col-md-7 col-lg-7">
-          <div class="learning_img">
-            <img src="img/undraw_Firmware_jw6u.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-5 col-lg-5">
-          <div class="learning_member_text">
-            <h5>Apply for our courses</h5>
-            <h3>Fill up the registration form</h3>
-            <p style="font-size: medium; color: black;"> School of Hawking provides you training in various job oriented sessions such as Robotics, Programming,..etc. In this new era skill is most important to get a job in these industries Hence, We can provide a better practical based education under a dedicated team of experts. These courses are designed to land you on your dream job. 
-            </p>
-            <ul>
-              <!-- <li><span class="ti-pencil-alt"></span></li> -->
-              <li style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: black;"><span
-                  class="ti-ruler-pencil"></span><mark  style="background-color: yellow;"> No need of any educational qualifications.</mark> Your passion and mentality to learn are the only criteria 
-                through perfect Mentoring</li>
-              <li style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: black;"><span
-                  class="ti-ruler-pencil"></span><mark  style="background-color: yellow;"> Pay Fee only after you get a job</mark>
-                </li>
 
-            </ul>
-            <!-- <a href="#" class="btn_1">Read More</a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-<section  id="contact">
+<section  id="contact" style="margin-top:95px;">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-5">
@@ -152,7 +111,7 @@ for education and its our vision & Motto">
 
             </div>
             <div class="col-lg-8">
-              <form class="">
+              <form action="https://formsubmit.co/schoolofhawking@gmail.com" method="POST">
                 <div class="row">
                 
                   <div class="col-sm-6">
@@ -163,19 +122,26 @@ for education and its our vision & Motto">
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
+                      <input style="border:2px solid " class="form-control" name="parentname" id="parentname" type="text" onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Enter your Parent/Guardian Name'" placeholder="Enter your Parent/Guardian Name" required>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
                       <input class="form-control"style="border:2px solid " name="email" id="email" type="email" onfocus="this.placeholder = ''"
                         onblur="this.placeholder = 'Enter email address'" placeholder="Enter email address" required>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                     <input style="border:2px solid " class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''"
+                     <input style="border:2px solid " class="form-control" name="name" id="phone" type="text" onfocus="this.placeholder = ''"
                         onblur="this.placeholder = ' Enter your Phone Number'" placeholder="Enter your Phone Number" required>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                     <input style="border:2px solid " class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''"
+                     <input style="border:2px solid " class="form-control" name="name" id="age" type="text" onfocus="this.placeholder = ''"
                         onblur="this.placeholder = ' Enter your Age'" placeholder="Enter your age" required>
                     </div>
                   </div>
@@ -208,7 +174,7 @@ for education and its our vision & Motto">
                  
                 </div>
                 <div class="form-group mt-3">
-                  <button type="button" onclick="formSubmit()" class="button button-contactForm btn_1"> Register Now</button>
+                  <button type="submit"  class="button button-contactForm btn_1"> Register Now</button>
                 </div>
               </form>
             </div>
@@ -227,6 +193,27 @@ for education and its our vision & Motto">
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -276,56 +263,7 @@ for education and its our vision & Motto">
 
 
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-        <script>
-          function formSubmit() {
-
-
-            let email = document.getElementById('email').value
-            let message = document.getElementById('message').value
-            let name = document.getElementById('name').value
-            let phno = document.getElementById('phno').value
-
-
-            if (!email && !message && !name && !phno) {
-
-              alert('please fill all the fields')
-            }
-
-            if (phno.length != 10) {
-
-              alert('Please enter 10 digit Phone Number')
-            }
-
-
-            else {
-              $.ajax({
-                url: "https://script.google.com/macros/s/AKfycby_OpYuWts1cd8MirnThFcjkKeg68VM1mqk4cUdhpn-t_b4B0gW1qRF0s0OjTOP0haC/exec",
-                data: {
-                  email,
-                  message,
-                  phno,
-                  name
-                },
-                method: "post",
-                success: function (response) {
-                  alert("Form submitted successfully")
-                  window.location.reload()
-
-                },
-                error: function (err) {
-                  alert("Something Error")
-
-                }
-              })
-            }
-
-
-
-
-          }
-// console.log($("#contactForm").serialize());
-
-        </script>
+       
 
 
 
@@ -355,12 +293,53 @@ for education and its our vision & Motto">
 
 
 
-        <script>
+         <script>
+          function formSubmit() {
+
+
+            let email = document.getElementById('email').value
+            let name = document.getElementById('name').value
+            let parentname = document.getElementById('parentname').value
+            let phone = document.getElementById('phone').value
+  let age = document.getElementById('age').value
+
+            if (!email && !name && !parentname && !phone) {
+
+              alert('please fill all the fields')
+            }
+
+            
+
+
+            else {
+              $.ajax({
+                url: "https://formsubmit.co/ajax/schoolofhawking@gmail.com",
+                data: {
+                  email,
+                  name,
+                  parentname,
+                  phone,
+                  age
+                },
+                dataType: "json",
+                method: "post",
+                success: function (response) {
+                  alert("Form submitted successfully")
+                  window.location.reload()
+
+                },
+                error: function (err) {
+                  alert("Something Error")
+
+                }
+              })
+            }
 
 
 
 
-
+          }
+// console.log($("#contactForm").serialize());
 
         </script>
 
