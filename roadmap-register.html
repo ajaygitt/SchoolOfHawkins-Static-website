@@ -51,6 +51,13 @@ for education and its our vision & Motto">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
+<style>
+
+
+
+
+
+</style>
 <body>
 
   <header class="main_menu home_menu">
@@ -103,7 +110,7 @@ for education and its our vision & Motto">
                 <!-- <p>popular courses</p> -->
                 <h2>Register Here
 👇</h2>
-<p style="padding-top:5px">Register here for roadmap program </p>
+<p class="subheadingtext" style="padding-top:5px">Register here for roadmap program </p>
               </div>
             </div>
           </div>
@@ -145,6 +152,12 @@ for education and its our vision & Motto">
                     <div class="form-group">
                      <input style="border:2px solid " class="form-control" name="name" id="phone" type="number" onfocus="this.placeholder = ''"
                         onblur="this.placeholder = 'Enter your phone number'" placeholder="Enter your phone number" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                     <input style="border:2px solid " class="form-control" name="name" id="parentphone" type="number" onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Enter parent phone number'" placeholder="Enter Parent phone number" required>
                     </div>
                   </div>
                   
@@ -287,6 +300,7 @@ for education and its our vision & Motto">
             let name = document.getElementById('name').value
             let standard = document.getElementById('standard').value
             let phone = document.getElementById('phone').value
+            let parentphone= document.getElementById('parentphone').value
 //   let age = document.getElementById('age').value
    // let address = document.getElementById('address').value
 let programApplied="ROAD_MAP_PROGRAM_2021"
@@ -307,6 +321,7 @@ let programApplied="ROAD_MAP_PROGRAM_2021"
                   school,
                   standard,
                   phone,
+                  parentphone,
                   programApplied
                 },
                 dataType: "json",
